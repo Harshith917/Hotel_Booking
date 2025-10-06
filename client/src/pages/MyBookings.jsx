@@ -8,7 +8,7 @@ const MyBookings = () => {
   return (
     <div className='py-28 md:py-35 md:pt-32 px-4 md:px-16 lg:px-24 xl:px-32'>
 
-      <Title title='My Bookings' subTitle='Easily manage your past,current and upcominghotel reservations in pon eplace. PLan your trips seamlessly.' align='left'/>
+      <Title title='My Bookings' subTitle='Easily manage your past,current and upcoming hotel reservations in one place. Plan your trips seamlessly.' align='left'/>
 
       <div className='max-w-6xl mt-8 w-full text-gray-800'>
         <div className='hidden md:grid md:grid-cols-[3fr_2fr_1fr] w-full items-center border-b border-gray-300 font-medium text-base py-3'>
@@ -41,7 +41,7 @@ const MyBookings = () => {
                 {/* date and time details */}
                 <div className='flex flex-row md:items-center md:gap-12 mt-3 gap-8'>
                     <div>
-                        <p className='text-gray-500 text-sm'>Check-IN:</p>
+                        <p className='text-gray-500 text-sm'>Check-In:</p>
                         <p>{new Date(booking.checkInDate).toDateString()}</p>
                     </div>
                     <div>

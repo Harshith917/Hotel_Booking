@@ -50,7 +50,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <Link to="/">
                     {/* <img src={assets.logo} alt="logo" className={`h-9 ${isScrolled && "invert opacity-80"}`} /> */}
-                    <h1 className="text-[#6F00FF] ml-8 text-3xl md:text-4xl font-extrabold mb-4 mr-2 flex items-center gap-2 "><span className="text-2xl">🏠</span> StaySet</h1>
+                    <h1 className={`${isScrolled ? "text-black" : "text-white"} text-[#efecf3] ml-8 mt-1.5 text-3xl md:text-4xl font-extrabold mb-4 mr-2 flex items-center gap-2`}><span className="text-2xl">🏠</span> StaySet</h1>
                     
                     
 
@@ -59,9 +59,9 @@ const Navbar = () => {
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-4 lg:gap-8">
                     {navLinks.map((link, i) => (
-                        <a key={i} href={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-white"}`}>
+                        <a key={i} href={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-black" : "text-white"}`}>
                             {link.name}
-                            <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
+                            <div className={`${isScrolled ? "bg-black" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                         </a>
                     ))}
                     <button onClick={()=> navigate('/owner')} className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>

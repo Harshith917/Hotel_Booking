@@ -9,7 +9,7 @@ const LayOut = () => {
       <Navbar />
       <div className='flex h-full'>
         <Sidebar />
-        <div className='flex-1 p-4 md:p-8 overflow-y-auto'>
+        <div className='flex-1 p-4 pt-10 md:px-8 h-full'>
             <Outlet />
         </div>
       </div>
